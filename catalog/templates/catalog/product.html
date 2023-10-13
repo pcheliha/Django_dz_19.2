@@ -1,0 +1,25 @@
+{% extends 'catalog/base.html' %}
+{% load templatetags %}
+{% block content %}
+
+
+{% for object in object_list %}
+<div class="col-md-4">
+    <div class="card mb-4 box-shadow">
+        <div class="card-header">
+            <img class="card-img-top" src="{{ object.p_image|mediapath }}" height="200" >
+            <h4 class="card-title">{{ object.p_name }}</h4>
+        </div>
+        <div class="card-body">
+            <h1 class="card-text">{{ object.p_description }}</h1>
+            <h2 class="card-text">{{ object.p_price }}</h2>
+            <ul class="list-unstyled mt-3 mb-4 text-start m-3">
+            </ul>
+
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+
+{% endblock %}

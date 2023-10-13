@@ -1,0 +1,31 @@
+[
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "p_name": "банан",
+      "p_description": "фрукт",
+      "p_image": "p_image/Без_имени_NDH6Rf1.jpeg",
+      "p_category": 1,
+      "p_price": 20,
+      "p_date_of_creation": "2023-09-24T12:34:18.128Z",
+      "p_date_of_change": "2023-09-24T12:34:18.128Z"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "c_name": "продукты",
+      "c_description": "описание"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "c_name": "комлектующие ПК",
+      "c_description": "описание"
+    }
+  }
+]
